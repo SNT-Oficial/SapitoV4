@@ -21,4 +21,4 @@ EXPOSE  3000
 ###|> Exponiendo puerto para iniciar el servidor web <|###
 
 CMD     ["node", "index.js", "--server"]
-###|> Iniciando TheMystic-Bot-MD en modo serbidor <|###
+###|> Iniciando TheMystic-Bot-MD en modo servidor <|###
