@@ -14,7 +14,7 @@ COPY    package.json .
 RUN     npm i
 ###|> Instalando dependencias <|###
 
-# COPY    . .
+COPY    . .
 ###|> Clonando todos los archivos al directorio actual <|###
 
 EXPOSE  3000
