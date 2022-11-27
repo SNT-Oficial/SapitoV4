@@ -1,7 +1,7 @@
 import express from 'express'
 import { createServer } from 'http'
-import path from 'path'
-import { Socket } from 'socket.io'
+/*import path from 'path'
+import { Socket } from 'socket.io'*/
 import { toBuffer } from 'qrcode'
 import fetch from 'node-fetch'
 

@@ -14,11 +14,11 @@ COPY    package.json .
 RUN     npm i
 ###|> Instalando dependencias <|###
 
-COPY . .
+# COPY    . .
 ###|> Clonando todos los archivos al directorio actual <|###
 
-EXPOSE 3000
+EXPOSE  3000
 ###|> Exponiendo puerto para iniciar el servidor web <|###
 
-CMD ["node", "index.js", "--server"]
+CMD     ["node", "index.js", "--server"]
 ###|> Iniciando TheMystic-Bot-MD en modo serbidor <|###
