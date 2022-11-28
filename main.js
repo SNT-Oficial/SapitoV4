@@ -73,39 +73,17 @@ const msgRetryCounterMap = {}
 const { version: WAVersion } = await fetchLatestBaileysVersion()
 const optss = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
 
-global.serverMode = false
-
-if (opts['server']) { 
-        (await import('./server.js')).default(global.conn, PORT)
-        global.serverMode = true
-}
-
-if (serverMode = 'true') {
-        const connectionOptions = {
-                version: WAVersion,
-                printQRInTerminal: false,
-                logger: pino({ level: 'silent' }),
-                msgRetryCounterMap,
-                auth: state,
-                browser: ['MysticBot','Safari','9.7.0'],
-                getMessage: async (key) => (
-                optss.store.loadMessage(/** @type {string} */(key.remoteJid), key.id) || 
-                optss.store.loadMessage(/** @type {string} */(key.id)) || {}
-                ).message || { conversation: 'Please send messages again' }
-                }
-} else {
-        const connectionOptions = {
-                version: WAVersion,
-                printQRInTerminal: true,
-                logger: pino({ level: 'silent' }),
-                msgRetryCounterMap,
-                auth: state,
-                browser: ['MysticBot','Safari','9.7.0'],
-                getMessage: async (key) => (
-                optss.store.loadMessage(/** @type {string} */(key.remoteJid), key.id) || 
-                optss.store.loadMessage(/** @type {string} */(key.id)) || {}
-                ).message || { conversation: 'Please send messages again' }
-                }
+const connectionOptions = {
+version: WAVersion,
+printQRInTerminal: true,
+logger: pino({ level: 'silent' }),
+msgRetryCounterMap,
+auth: state,
+browser: ['MysticBot','Safari','9.7.0'],
+getMessage: async (key) => (
+optss.store.loadMessage(/** @type {string} */(key.remoteJid), key.id) || 
+optss.store.loadMessage(/** @type {string} */(key.id)) || {}
+).message || { conversation: 'Please send messages again' }
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -116,6 +94,8 @@ if (global.db) setInterval(async () => {
 if (global.db.data) await global.db.write()
 if (opts['autocleartmp'] && (global.support || {}).find) (tmp = [os.tmpdir(), 'tmp', "jadibts"], tmp.forEach(filename => cp.spawn('find', [filename, '-amin', '3', '-type', 'f', '-delete'])))
 }, 30 * 1000)}
+
+if (opts['server']) (await import('./server.js')).default(global.conn, PORT)
 
 function clearTmp() {
 const tmp = [tmpdir(), join(__dirname, './tmp')]
