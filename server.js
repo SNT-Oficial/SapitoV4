@@ -20,6 +20,7 @@ conn.ev.on('connection.update', function appQR({ qr }) {
 app.use(async (req, res) => {
     res.setHeader('content-type', 'image/png')
     res.send(await toBuffer(_qr))
+    res.end(console.log('A'))
 })
   
 server.listen(PORT, () => {
