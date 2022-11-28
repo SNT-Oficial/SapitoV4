@@ -1,12 +1,16 @@
+///| Server Mode |///
+///|> Aqui se encuentra el modo servidor de TheMystic-Bot-MD! |///
+
+///| Librerias |///
 import express from 'express'
 import { createServer } from 'http'
-import path from 'path'
-import { Socket } from 'socket.io'
 import { toBuffer } from 'qrcode'
 import fetch from 'node-fetch'
 
+///| Start |///
 function connect(conn, PORT) {
 let app = global.app = express()
+app.locals.title = 'A'
 let server = global.server = createServer(app)
 let _qr = 'invalid'
 
