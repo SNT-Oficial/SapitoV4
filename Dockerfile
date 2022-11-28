@@ -18,7 +18,7 @@ COPY    . .
 ###|> Clonando todos los archivos al directorio actual <|###
 
 EXPOSE  3000
-###|> Exponiendo puerto para iniciar el servidor web <|###
+###|> Exponiendo puerto '3000' para iniciar el servidor web <|###
 
 CMD     ["node", "index.js", "--server"]
 ###|> Iniciando TheMystic-Bot-MD en modo servidor <|###
