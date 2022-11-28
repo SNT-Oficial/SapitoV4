@@ -2,7 +2,7 @@
 ///|> Aqui se encuentra el modo servidor de TheMystic-Bot-MD! |///
 
 ///| Librerias |///
-import express from 'express'
+//import express from 'express'
 import { createServer } from 'http'
 import { toBuffer } from 'qrcode'
 import fetch from 'node-fetch'
