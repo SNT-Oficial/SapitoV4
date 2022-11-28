@@ -11,15 +11,15 @@ import fetch from 'node-fetch'
 function connect(conn, PORT) {
     let app = global.app = express()
     let server = global.server = createServer(app)
-    let invalidQR = 'QR invalido'
+    let _qr = 'QR invalido'
 
-conn.ev.on('connection.update', function appQR({ qrCode }) {
-    if (qrCode) invalidQR = qrCode
+conn.ev.on('connection.update', function appQR({ qr }) {
+    if (qr) _qr = qr
 })
 
 app.use(async (req, res) => {
     res.setHeader('content-type', 'image/png')
-    res.end(await toBuffer(invalidQR))
+    res.end(await toBuffer(_qr))
 })
   
 server.listen(PORT, () => {
