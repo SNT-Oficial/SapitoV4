@@ -36,7 +36,7 @@ function keepAlive() {
 const url = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`
 if (/(\/\/|\.)undefined\./.test(url)) return
 setInterval(() => {
-fetch(url).catch(/*console.error*/)
+fetch(url).catch(console.error)
 }, 5 * 1000 * 60)}
 
 export default connect
