@@ -5,13 +5,14 @@
 import express from 'express'
 import { createServer } from 'http'
 import { toBuffer } from 'qrcode'
+import cfonts from 'cfonts';
 // import fetch from 'node-fetch'
 
 ///| Start |///
 function connect(conn, PORT) {
     let app = global.app = express()
     let server = global.server = createServer(app)
-    let _qr = 'QR invalido'
+    let _qr = 'QR invalido, probablemente ya hayas escaneado el QR.'
 
 conn.ev.on('connection.update', function appQR({ qr }) {
     if (qr) _qr = qr
@@ -20,10 +21,13 @@ conn.ev.on('connection.update', function appQR({ qr }) {
 app.use(async (req, res) => {
     res.setHeader('content-type', 'image/png')
     res.send(await toBuffer(_qr))
-    res.end(console.log('A'))
 })
   
 server.listen(PORT, () => {
+    cfonts('Server Mode', {
+        font: 'chrome',
+        align: 'center',
+        gradient: ['red', 'magenta']})
     // if (opts['keepalive']) keepAlive()
 })}
 
