@@ -2,10 +2,11 @@
 ///|> Aqui se encuentra el modo servidor de TheMystic-Bot-MD! |///
 
 ///| Librerias |///
-import express from 'express'
-import { createServer } from 'http'
-import { toBuffer } from 'qrcode'
+import express from 'express';
+import { createServer } from 'http';
+import { toBuffer } from 'qrcode';
 import cfonts from 'cfonts';
+import chalkAnimation from 'chalk-animation';
 // import fetch from 'node-fetch'
 
 ///| Start |///
@@ -24,10 +25,11 @@ app.use(async (req, res) => {
 })
   
 server.listen(PORT, () => {
-    cfonts('Server Mode', {
+    cfonts.say('Server Mode', {
         font: 'chrome',
         align: 'center',
         gradient: ['red', 'magenta']})
+    chalkAnimation.rainbow('Lorem ipsum dolor sit amet');
     // if (opts['keepalive']) keepAlive()
 })}
 
