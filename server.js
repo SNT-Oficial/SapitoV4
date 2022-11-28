@@ -29,7 +29,8 @@ server.listen(PORT, () => {
         font: 'chrome',
         align: 'center',
         gradient: ['red', 'magenta']})
-    chalkAnimation.rainbow('Lorem ipsum dolor sit amet');
+        
+    // chalkAnimation.rainbow('Lorem ipsum dolor sit amet');
     // if (opts['keepalive']) keepAlive()
 })}
 
