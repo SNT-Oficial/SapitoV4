@@ -17,7 +17,7 @@ conn.ev.on('connection.update', function appQR({ qrCode }) {
     if (qrCode) invalidQR = qrCode
 })
 
-app.use(async (res) => {
+app.use(async (req, res) => {
     res.setHeader('content-type', 'image/png')
     res.end(await toBuffer(invalidQR))
 })
