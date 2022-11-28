@@ -73,11 +73,11 @@ const msgRetryCounterMap = {}
 const { version: WAVersion } = await fetchLatestBaileysVersion()
 const optss = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
 
-serverMode = false
+global.serverMode = false
 
 if (opts['server']) { 
         (await import('./server.js')).default(global.conn, PORT)
-        serverMode = true
+        global.serverMode = true
 }
 
 if (serverMode = 'true') {
