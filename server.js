@@ -23,14 +23,18 @@ app.use(async (req, res) => {
     res.setHeader('content-type', 'image/png')
     res.send(await toBuffer(_qr))
 })
-  
+
+cfonts.say('Server Mode', {
+    font: 'chrome',
+    align: 'center',
+    gradient: ['red', 'magenta']})
+
 server.listen(PORT, () => {
-    cfonts.say('Server Mode', {
-        font: 'chrome',
-        align: 'center',
-        gradient: ['red', 'magenta']})
-    
-    chalkAnimation.rainbow('Web Server started at port: ',PORT);
+    if (!PORT) {
+        chalkAnimation.rainbow('Modo servidor iniciado correctamente!');
+    } else {
+        chalkAnimation.rainbow('Servidor Web iniciado en el puerto: ',PORT);
+    }
     // if (opts['keepalive']) keepAlive()
 })}
 
