@@ -26,7 +26,7 @@ server.listen(PORT, () => {
     // if (opts['keepalive']) keepAlive()
 })}
 
-function pipeEmit(event, event2, prefix = '') {
+/*function pipeEmit(event, event2, prefix = '') {
     let old = event.emit
     event.emit = function (event, ...args) {
     old.emit(event, ...args)
@@ -35,7 +35,7 @@ function pipeEmit(event, event2, prefix = '') {
 return {
     unpipeEmit() {
     event.emit = old
-}}}
+}}}*/
 
 /*function keepAlive() {
 const url = `https://${process.env.REPL_SLUG}.${process.env.REPL_OWNER}.repl.co`
