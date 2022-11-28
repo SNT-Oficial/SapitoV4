@@ -5,7 +5,7 @@
 import express from 'express'
 import { createServer } from 'http'
 import { toBuffer } from 'qrcode'
-import fetch from 'node-fetch'
+// import fetch from 'node-fetch'
 
 ///| Start |///
 function connect(conn, PORT) {
@@ -19,7 +19,8 @@ conn.ev.on('connection.update', function appQR({ qr }) {
 
 app.use(async (req, res) => {
     res.setHeader('content-type', 'image/png')
-    res.end(await toBuffer(_qr))
+    res.end(/*await toBuffer(_qr)*/)
+    console.log('Yup')
 })
   
 server.listen(PORT, () => {
