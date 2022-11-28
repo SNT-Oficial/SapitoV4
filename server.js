@@ -5,8 +5,8 @@
 import express from 'express';
 import { createServer } from 'http';
 import { toBuffer } from 'qrcode';
-import cfonts from 'cfonts';
-import chalkAnimation from 'chalk-animation';
+/*import cfonts from 'cfonts';
+import chalkAnimation from 'chalk-animation';*/
 // import fetch from 'node-fetch'
 
 ///| Start |///
@@ -24,13 +24,14 @@ app.use(async (req, res) => {
     res.send(await toBuffer(_qr))
 })
 
+/*cfonts.say('Server Mode', {
+    font: 'chrome',
+    align: 'center',
+    gradient: ['red', 'magenta']})
+
+chalkAnimation.rainbow('Servidor Web iniciado en el puerto: ',PORT);*/
+
 server.listen(PORT, () => {
-    cfonts.say('Server Mode', {
-        font: 'chrome',
-        align: 'center',
-        gradient: ['red', 'magenta']})
-    
-    chalkAnimation.rainbow('Servidor Web iniciado en el puerto: ',PORT);
     // if (opts['keepalive']) keepAlive()
 })}
 
