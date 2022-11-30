@@ -1,8 +1,8 @@
 ###| Dockerfile |###
 ###|> Usa Docker para poder ejecutar TheMystic-Bot-MD en cualquier plataforma! <|###
 
-FROM    --platform=$TARGETOS/$TARGETARCH node:19.1-bullseye
-###|> Especificando la imagen docker a usar, incluyendo el tipo de plataforma (AMD64/ARM64) <|###
+FROM    node:19.1-bullseye
+###|> Especificando la imagen docker a usar <|###
 
 RUN     apt-get update \
         && apt-get install -y ffmpeg imagemagick webp
