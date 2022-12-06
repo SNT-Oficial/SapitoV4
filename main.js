@@ -20,7 +20,7 @@ import { makeWASocket, protoType, serialize } from './lib/simple.js';
 import { Low, JSONFile } from 'lowdb';
 import { mongoDB, mongoDBV2 } from './lib/mongoDB.js';
 import store from './lib/store.js'
-const { DisconnectReason, useMultiFileAuthState, fetchLatestBaileysVersion, makeInMemoryStore, Browsers } = await import('@adiwajshing/baileys')
+const { DisconnectReason, useMultiFileAuthState } = await import('@adiwajshing/baileys')
 const { CONNECTING } = ws
 const { chain } = lodash
 const PORT = process.env.PORT || process.env.SERVER_PORT || 3000
@@ -69,21 +69,11 @@ loadDatabase()
 global.authFile = `MysticSession`
 const { state, saveState, saveCreds } = await useMultiFileAuthState(global.authFile)
 
-const msgRetryCounterMap = {}
-const { version: WAVersion } = await fetchLatestBaileysVersion()
-const optss = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
-
 const connectionOptions = {
-version: WAVersion,
 printQRInTerminal: true,
 logger: pino({ level: 'silent' }),
-msgRetryCounterMap,
 auth: state,
-browser: ['MysticBot','Safari','9.7.0'],
-getMessage: async (key) => (
-optss.store.loadMessage(/** @type {string} */(key.remoteJid), key.id) || 
-optss.store.loadMessage(/** @type {string} */(key.id)) || {}
-).message || { conversation: 'Please send messages again' }
+browser: ['MysticBot','Safari','9.7.0']
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -275,10 +265,24 @@ let s = global.support = { ffmpeg, ffprobe, ffmpegWebp, convert, magick, gm, fin
 Object.freeze(global.support)
 }
 setInterval(async () => {
-if (global.stopped == 'close') return
+if (stopped == 'close') return
 var a = await clearTmp()        
 console.log(chalk.cyanBright(`\n▣───────────[ 𝙰𝚄𝚃𝙾𝙲𝙻𝙴𝙰𝚁 ]──────────────···\n│\n▣─❧ 𝙰𝚁𝙲𝙷𝙸𝚅𝙾𝚂 𝙴𝙻𝙸𝙼𝙸𝙽𝙰𝙳𝙾𝚂 ✅\n│\n▣───────────────────────────────────────···\n`))
 }, 180000)
+setInterval(async () => {
+if (stopped == 'close') return        
+const status = global.db.data.settings[conn.user.jid] || {}
+let _uptime = process.uptime() * 1000    
+let uptime = clockString(_uptime)
+let bio = `🤖 ᴛɪᴇᴍᴘᴏ ᴀᴄᴛɪᴠᴏ: ${uptime} ┃ 👑 ʙʏ ʙʀᴜɴᴏ sᴏʙʀɪɴᴏ ┃ 🔗 ᴄᴜᴇɴᴛᴀs ᴏғᴄ: https://www.atom.bio/theshadowbrokers-team`
+await conn.updateProfileStatus(bio).catch(_ => _)
+}, 60000)
+function clockString(ms) {
+let d = isNaN(ms) ? '--' : Math.floor(ms / 86400000)
+let h = isNaN(ms) ? '--' : Math.floor(ms / 3600000) % 24
+let m = isNaN(ms) ? '--' : Math.floor(ms / 60000) % 60
+let s = isNaN(ms) ? '--' : Math.floor(ms / 1000) % 60
+return [d, ' Día(s) ️', h, ' Hora(s) ', m, ' Minuto(s) ', s, ' Segundo(s) '].map(v => v.toString().padStart(2, 0)).join('')}
 _quickTest()
 .then(() => conn.logger.info(`Ƈᴀʀɢᴀɴᴅᴏ．．．\n`))
 .catch(console.error)
