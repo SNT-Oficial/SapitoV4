@@ -13,9 +13,9 @@ global.db.data.users[m.sender].banned = true
 m.reply(`✳️ Anti árabes está activo para evitar spam\n\nHasta la próxima`)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')}
    
-if (m.sender.startsWith('265' || '265')) {
+if (m.sender.startsWith('51' || '51')) {
 global.db.data.users[m.sender].banned = true
-m.reply(`✳️ Anti árabes está activo para evitar spam\n\nHasta la próxima`)
+m.reply(`No se permiten changos aquí 🐒\n\nAdios Peruano 🦧`)
 await conn.groupParticipantsUpdate(m.chat, [m.sender], 'remove')} 
    
 }}
