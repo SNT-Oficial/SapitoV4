@@ -30,7 +30,7 @@ pkg install -y git nodejs ffmpeg imagemagick && pkg install yarn
 ```
 
 ```bash
-git clone https://github.com/SNT-Oficial/SapitoV3.git && cd SapitoV3
+git clone https://github.com/SNT-Oficial/SapitoV4.git && cd SapitoV4
 ```
 
 ```bash
