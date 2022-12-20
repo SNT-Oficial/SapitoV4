@@ -12,7 +12,7 @@ let str = `
 
 ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`)}
 
-*<𝐌𝐄𝐍𝐔 𝐀𝐔𝐃𝐈𝐎𝐒/>*
+*<Audios De Sapito Bot/>*
 *- 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙻𝙰𝚂 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴𝚂 𝙿𝙰𝙻𝙰𝙱𝚁𝙰𝚂 𝙾 𝙵𝚁𝙰𝚂𝙴𝚂 𝚂𝙸𝙽 𝙽𝙸𝙽𝙶𝚄𝙽 𝙿𝚁𝙴𝙵𝙸𝙹𝙾 (#, /, *, .)*
 
 ° ඬ⃟🔊 _Quien es tu sempai botsito 7w7_
@@ -57,7 +57,7 @@ ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${glo
 ° ඬ⃟🔊 _:c_
 ° ඬ⃟🔊 _a_
 `.trim()
-conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/BrunoSobrino/TheMystic-Bot-MD', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
+conn.sendHydrated(m.chat, str, wm, pp, 'https://github.com/SNT-Oficial/SapitoV3', '𝙶𝙸𝚃𝙷𝚄𝙱', null, null, [
 ['𝙼𝙴𝙽𝚄 𝙿𝚁𝙸𝙽𝙲𝙸𝙿𝙰𝙻', '/menu']
 ], m)
 }}
