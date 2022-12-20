@@ -39,7 +39,7 @@ let str = `
 ╰═══╡✯✯✯✯✯✯✯✯✯╞═══╯
 *El equipo de SAPITO BOT les desea una Feliz Navidad 🎄*
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝕀ℕ𝔽𝕆 𝔻𝔼𝕃 𝕌𝕊𝕌𝔸ℝ𝕀𝕆 />*
+┃ *< INFO DEL USUARIO />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ *🎖️ Nivel:* ${level}
 ┣ *🧰 Experiencia:* ${exp}
@@ -52,11 +52,11 @@ ${readMore}
 ┏━━━━━━━━━━━━━━━━━━━┓
 ┃ *< 𝔹𝕆𝕋 𝕆𝔽ℂ 𝕆 𝕊𝕌𝔹 𝔹𝕆𝕋 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
-┣ ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial*'}
+┣ ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`) || '*Este es el Bot oficial de Sapito 🐸*'}
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝕀ℕ𝔽𝕆 𝔹𝕆𝕋 />*
+┃ *< INFO BOT />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 💟 _${usedPrefix}grupos_
 ┣ ඬ⃟ 💟 _${usedPrefix}estado_
@@ -69,13 +69,13 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝕌ℕ𝔼 𝕌ℕ 𝔹𝕆𝕋 𝔸 𝕋𝕌 𝔾ℝ𝕌ℙ𝕆 />*
+┃ *< UNE EL BOT A TU GRUPO />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👽 _${usedPrefix}join *<enlace / link / url>*_
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝕊𝔼ℝ𝔹𝕆𝕋 - 𝕁𝔸𝔻𝕀𝔹𝕆𝕋 />*
+┃ *< SERBOT />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🤖 _${usedPrefix}serbot_
 ┣ ඬ⃟ 🤖 _${usedPrefix}stop_
@@ -83,7 +83,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛  
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝕁𝕌𝔼𝔾𝕆𝕊 />*
+┃ *< JUEGOS />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🎖️ _${usedPrefix}mates *<noob / easy / medium / hard / extreme /impossible /impossible2>*_
 ┣ ඬ⃟ 🎖️ _${usedPrefix}ppt *<papel / tijera /piedra>*_
@@ -117,7 +117,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔸ℂ𝕋𝕀𝕍𝔸ℝ 𝕆 𝔻𝔼𝕊𝔸ℂ𝕋𝕀𝕍𝔸ℝ />*
+┃ *< ACTIVAR O DESACTIVAR />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ ☑️ _${usedPrefix}enable *welcome*_
 ┣ ඬ⃟ ☑️ _${usedPrefix}disable *welcome*_
@@ -146,13 +146,13 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┣ *< ℝ𝔼ℙ𝕆ℝ𝕋𝔸ℝ 𝔼ℝℝ𝕆ℝ𝔼𝕊 />*
+┣ *< REPORTAR ERRORES />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🔰 _${usedPrefix}reporte *<texto>*_
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔻𝔼𝕊ℂ𝔸ℝ𝔾𝔸𝕊 />*
+┃ *< DESCARGAS />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 📥 _${usedPrefix}instagram *<enlace / link / url>*_
 ┣ ඬ⃟ 📥 _${usedPrefix}instagram2 *<enlace / link / url>*_
@@ -197,7 +197,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔾ℝ𝕌ℙ𝕆𝕊 />* 
+┃ *< GRUPOS />* 
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 💎 _${usedPrefix}add *<numero>*_
 ┣ ඬ⃟ 💎 _${usedPrefix}kick *<@tag>*_
@@ -228,7 +228,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< ℂ𝕆ℕ𝕍𝔼ℝ𝕋𝕀𝔻𝕆ℝ𝔼𝕊 />*
+┃ *< CONBERTIDORES />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🧧 _${usedPrefix}togifaud *<video>*_
 ┣ ඬ⃟ 🧧 _${usedPrefix}toimg *<sticker>*_
@@ -241,7 +241,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝕐 𝕃𝕆𝔾𝕆𝕊 />*
+┃ *< EFECTO Y LOGOS />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🖍️ _${usedPrefix}mensajefalso *<nombre|mensaje>*_
 ┣ ඬ⃟ 🖍️ _${usedPrefix}phmaker *<opcion> <imagen>*_
@@ -258,7 +258,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔽ℝ𝔸𝕊𝔼𝕊 𝕐 𝕋𝔼𝕏𝕋𝕆𝕊 />*
+┃ *< FRACES Y TEXTOS />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🥀 _${usedPrefix}piropo_
 ┣ ඬ⃟ 🥀 _${usedPrefix}consejo_
@@ -267,7 +267,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< ℝ𝔸ℕ𝔻𝕆𝕄 />*
+┃ *< RAMDON />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👾 _${usedPrefix}kpop *<blackpink / exo / bts>*_
 ┣ ඬ⃟ 👾 _${usedPrefix}cristianoronaldo_
@@ -338,7 +338,7 @@ SAPITO BOT
 
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< ℂ𝕆𝕄𝔸ℕ𝔻𝕆𝕊 +𝟙𝟠 />*
+┃ *< COMANDOS +18 />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🔞 _${usedPrefix}pack_
 ┣ ඬ⃟ 🔞 _${usedPrefix}pack2_
@@ -374,7 +374,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔼𝔽𝔼ℂ𝕋𝕆𝕊 𝔻𝔼 𝔸𝕌𝔻𝕀𝕆𝕊 />*
+┃ *< EFECTOS DE AUDIOS />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┃*- 𝚁𝙴𝚂𝙿𝙾𝙽𝙳𝙴 𝙰 𝙰𝚄𝙳𝙸𝙾 𝙾 𝙽𝙾𝚃𝙰 𝙳𝙴 𝚅𝙾𝚉*
 ┣ ඬ⃟ 🎤 _${usedPrefix}bass_
@@ -392,7 +392,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< ℂℍ𝔸𝕋 𝔸ℕ𝕆ℕ𝕀𝕄𝕆 />*
+┃ *< CHAT ANONIMO />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 📳 _${usedPrefix}start_
 ┣ ඬ⃟ 📳 _${usedPrefix}next_
