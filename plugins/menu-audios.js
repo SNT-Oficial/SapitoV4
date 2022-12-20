@@ -8,12 +8,12 @@ try {
 //let about = (await conn.getStatus(who).catch(console.error) || {}).status || ''
 let name = await conn.getName(m.sender)
 let str = `
-*ミ💖 𝙷𝙾𝙻𝙰 _${name}_ 💖彡*
+*ミ💖 Jola _${name}_ 💖彡*
 
 ${(conn.user.jid == global.conn.user.jid ? '' : `Jadibot de: https://wa.me/${global.conn.user.jid.split`@`[0]}`)}
 
 *<Audios De Sapito Bot/>*
-*- 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙻𝙰𝚂 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴𝚂 𝙿𝙰𝙻𝙰𝙱𝚁𝙰𝚂 𝙾 𝙵𝚁𝙰𝚂𝙴𝚂 𝚂𝙸𝙽 𝙽𝙸𝙽𝙶𝚄𝙽 𝙿𝚁𝙴𝙵𝙸𝙹𝙾 (#, /, *, .)*
+*- Escribe las siguientes palabras o frases sin ningun prefijo (#, /, *, .)*
 
 ° ඬ⃟🔊 _Quien es tu sempai botsito 7w7_
 ° ඬ⃟🔊 _Te diagnostico con gay_
