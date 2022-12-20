@@ -15,8 +15,8 @@ global.owner = [
   
 ] 
 
-global.suittag = ['524531173598'] 
-global.prems = ['595983186566'] 
+global.suittag = ['595983186566'] 
+global.prems = ['524531173598'] 
 
 global.packname = 'SNT'
 global.author = 'Sapito Bot'
