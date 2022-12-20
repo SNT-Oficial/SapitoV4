@@ -630,7 +630,7 @@ SAPITO BOT
 let buttons = [
 { buttonId: '#menu2', buttonText: { displayText: '▶️ Menú Audio ▶️' }, type: 1 },
 { buttonId: '#owner', buttonText: { displayText: '👑 Creador 👑' }, type: 1 }]
-{ buttonId: '#infobot', buttonText: { displayText: '🐾 𝙸𝙽𝙵𝙾𝙱𝙾𝚃 🐾' }, type: 1 }]
+//{ buttonId: '#infobot', buttonText: { displayText: '🐾 𝙸𝙽𝙵𝙾𝙱𝙾𝚃 🐾' }, type: 1 }]
 let buttonMessage = {
 image: pp,
 caption: str.trim(),
@@ -644,10 +644,10 @@ externalAdReply: {
 showAdAttribution: true,
 mediaType: 'VIDEO',
 mediaUrl: null,
-title: '🐸 SAPITO BOT🐸',
+title: '🐸 SAPITO BOT 🐸',
 body: null,
 thumbnail: img,
-sourceUrl: `what`
+sourceUrl: `http://wa.me/524531173598`
 }}}
 conn.sendMessage(m.chat, buttonMessage, { quoted: m })
 //await conn.sendFile(m.chat, vn, 'menu.mp3', null, m, true, { type: 'audioMessage', ptt: true})
