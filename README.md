@@ -85,7 +85,7 @@ ESCRIBE LOS SIGUIENTES COMANDOS UNO POR UNO:
 <a href="https://github.com/unptoadrih15"><img src="https://github.com/unptoadrih15.png" width="100" height="100" alt="unptoadrih15"/></a>
 
 # 𝐶𝑟𝑒𝑑𝑖𝑡𝑜𝑠 𝑌 𝑎𝑔𝑟𝑎𝑑𝑒𝑐𝑖𝑚𝑖𝑒𝑛𝑡𝑜 
-
+<a href="https://github.com/BrunoSobrino"><img src="https://github.com/BrunoSobrino.png" width="200" height="200" alt="BrunoSobrino"/></a>
 # 𝐸𝑑𝑖𝑡𝑜𝑟 𝑌 𝑃𝑟𝑜𝑝𝑖𝑒𝑡𝑎𝑟𝑖𝑜 𝐷𝑒𝑙 𝐵𝑜𝑡
 <a href="https://github.com/SNT-Oficial"><img src="https://github.com/SNT-Oficial.png" width="250" height="250" alt="SNT-Oficial"/></a>
   
