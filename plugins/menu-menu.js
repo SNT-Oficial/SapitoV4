@@ -400,7 +400,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔹𝕌𝕊ℂ𝔸𝔻𝕆ℝ𝔼𝕊 />*
+┃ *< BUSCADORES />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🔍 _${usedPrefix}modapk *<texto>*_
 ┣ ඬ⃟ 🔍 _${usedPrefix}stickersearch *<texto>*_
@@ -424,7 +424,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝔸𝕌𝔻𝕀𝕆𝕊 />*   
+┃ *< AUDIOS />*   
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┃ *- 𝙴𝚂𝙲𝚁𝙸𝙱𝙴 𝙻𝙰𝚂 𝚂𝙸𝙶𝚄𝙸𝙴𝙽𝚃𝙴𝚂 𝙿𝙰𝙻𝙰𝙱𝚁𝙰𝚂 𝙾 𝙵𝚁𝙰𝚂𝙴𝚂 𝚂𝙸𝙽 𝙽𝙸𝙽𝙶𝚄𝙽 𝙿𝚁𝙴𝙵𝙸𝙹𝙾 (#, /, *, .)* 
 ┃ _- (𝑢𝑠𝑜 𝑠𝑖𝑛 𝑝𝑟𝑒𝑓𝑖𝑗𝑜)_
@@ -473,7 +473,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< ℍ𝔼ℝℝ𝔸𝕄𝕀𝔼ℕ𝕋𝔸𝕊 />*
+┃ *< HERRAMIENTAS />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 🛠️ _${usedPrefix}spamwa *<numero|texto|cantidad>*_
 ┣ ඬ⃟ 🛠️ _${usedPrefix}tamaño *<cantidad> <imagen / video>*_
@@ -497,7 +497,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< ℝℙ𝔾 - 𝕃𝕀𝕄𝕀𝕋𝔼𝕊 - 𝔼ℂ𝕆ℕ𝕆𝕄𝕀𝔸 />*
+┃ *< RPG - LIMITES - ECONOMIA />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 💵 _${usedPrefix}adventure_
 ┣ ඬ⃟ 💵 _${usedPrefix}cazar_
@@ -521,7 +521,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝕊𝕋𝕀ℂ𝕂𝔼ℝ𝕊 />*
+┃ *< STICKERS />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👽 _${usedPrefix}sticker *<responder a imagen o video>*_
 ┣ ඬ⃟ 👽 _${usedPrefix}sticker *<enlace / link / url>*_
@@ -560,7 +560,7 @@ SAPITO BOT
 
 
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝕆𝕎ℕ𝔼ℝ 𝕐 𝕄𝕆𝔻𝔼ℝ𝔸𝔻𝕆ℝ𝔼𝕊 />*
+┃ *< OWNER Y MODERADORES />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 👑 > *<funcion>*
 ┣ ඬ⃟ 👑 => *<funcion>*
@@ -615,7 +615,7 @@ SAPITO BOT
 ┗━━━━━━━━━━━━━━━━━━━┛
 SAPITO BOT
 ┏━━━━━━━━━━━━━━━━━━━┓
-┃ *< 𝕄𝔸𝕋𝔸 𝕎ℍ𝔸𝕋𝕊𝔸ℙℙ - 𝕍𝕀ℝ𝕌𝕊 />*
+┃ *< MATA WASAP - VIRUS />*
 ┃≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡┃
 ┣ ඬ⃟ 💀 _${usedPrefix}crash𝟷_
 ┣ ඬ⃟ 💀 _${usedPrefix}crash2_
